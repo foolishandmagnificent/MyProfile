@@ -1,20 +1,24 @@
 .container-fluid {
   width: 100%;
   padding: 0px 0px;
-  background-color: black;
-
+  background-size: 600px;
+  background-image: url(Profile/freebiefriday-1680x1050-moonsnstars.jpg) ;
 }
 
 .navbar {
   width: 100%;
   text-align: center;
   background-color: black;
-  position: sticky;
   font-size: 1.2em;
 }
 
-h1, h2, h3, h4 {
+h1, h2{
   color: white;
+}
+
+h3, h4 {
+  color: black;
+  margin-bottom: 10px;
 }
 
 a {
@@ -28,7 +32,7 @@ a {
 
 .headerImage {
 width: 100%;
-height: 670px;
+height: 700px;
 }
 
 .tmp {
@@ -41,7 +45,21 @@ height: 670px;
   color: white;
   background-color: black;
   text-align: center;
+  animation-duration: 3s;
+  animation-name: easier;
 }
+
+@keyframes easier {
+ from {
+   margin-left: 100%;
+   width: 300%;
+ }
+ to {
+   margin-left: 0%;
+   width: 100%;
+ }
+}
+/* Make animation when looking */
 
 p.easier {
   font-size: 1.3em;
@@ -49,7 +67,6 @@ p.easier {
 }
 
 h3 {
-  text-align: center;
   font-size: 1.2em;
 }
 
@@ -66,22 +83,37 @@ h3 {
   text-shadow: 2px 2px 4px #000000;
 }
 
+.Services {
+  padding-top: 40px;
+}
+
+.AboutMe {
+  background-color: white;
+  margin: 0 30px;
+  color: black;
+
+}
+
 .AboutMeLeft {
-  padding: 30px 30px;
   display: inline-block;
-  margin: auto;
+  padding: 40px 70px;
+  margin: 60px 0px;
+}
+
+h3.AboutMeLeft {
+  color: black;
 }
 
 p {
   padding-left: 20px;
-  color: white;
 }
 
 .AboutMeRight {
   float: right;
+  margin-top: 100px;
   width: 100%;
   display: inline-block;
-  border-left: 2px solid red;
+  border-left: 2px solid black;
 }
 
 .profilePicture {
@@ -90,14 +122,62 @@ p {
   background-color: black;
 }
 
+.Done {
+  background-color: white;
+  margin: 10px 30px;
+  color: black;
+}
+
 .Portfolio {
   margin: 100px;
+  padding-top: 20px;
+}
+
+.skills {
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
+
+ul {
+    list-style: <i class="fas fa-fast-forward"></i>;
+}
+
+.languages, .skills {
+  margin-top: 20px;
+  text-align: justify;
+  padding-right: 60px;
+}
+
+.resume {
+  background-color: #cccdce;
+  color: black;
+  width: 60%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+  margin: 20px -1px 20px 75px;
+}
+
+
+a:hover.resume {
+  background-color: grey;
+  text-decoration: none;
+  color: white;
+}
+
+.computer {
+  width: 100%;
+  margin: auto;
 }
 
 footer {
-  font-size: 11px;
   color: grey;
   text-align: center;
   background-color: black;
-  font-size: 1.2em;
+  font-size: 0.8em;
+  padding-top: 10px;
+  line-height: 1.6;
+  margin-top: 50px;
 }
