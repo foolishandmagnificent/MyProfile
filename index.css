@@ -1,6 +1,8 @@
 .container-fluid {
   width: 100%;
   padding: 0px 0px;
+  background-color: black;
+
 }
 
 .navbar {
@@ -11,18 +13,39 @@
   font-size: 1.2em;
 }
 
+h1, h2, h3, h4 {
+  color: white;
+}
+
 a {
   color: white;
   text-transform: uppercase;
 }
 
-img {
+.signature {
+  width: 100px;
+}
+
+.headerImage {
 width: 100%;
-height: 500px;
+height: 670px;
 }
 
 .tmp {
   margin: 0px 0px;
+}
+
+.easier {
+  width: 100%;
+  height: 80px;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+p.easier {
+  font-size: 1.3em;
+  padding-top: 20px;
 }
 
 h3 {
@@ -40,21 +63,35 @@ h3 {
   position: absolute;
   top: 30%;
   text-align: center;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .AboutMeLeft {
-  float: left;
   padding: 30px 30px;
   display: inline-block;
-  background-color: #999;
-  border: 2px black solid;
+  margin: auto;
+}
+
+p {
+  padding-left: 20px;
+  color: white;
 }
 
 .AboutMeRight {
   float: right;
   width: 100%;
   display: inline-block;
-  background-color: red;
+  border-left: 2px solid red;
+}
+
+.profilePicture {
+  width: 100%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.Portfolio {
+  margin: 100px;
 }
 
 footer {
